@@ -8,7 +8,7 @@ body { color: #ffffff; font-family: sans-serif;}
 <body style="background-color:#36393f;">
 <h1>Bitte ausfüllen</h1>
 
-<form action="form_mm.php" method="post">
+<form action="form.php" method="post">
     1. Nummer <input id="num1" name="num1">
     <br>
     2. Nummer <input id="num2" name="num2">

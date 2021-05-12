@@ -27,8 +27,10 @@ body {
 
 
 <?php
-    $num1 = $_POST[num1];
-    $num2 = $_POST[num2];
+
+    /** get vars, run function */
+    $num1 = $_POST["num1"] ?? null;
+    $num2 = $_POST["num2"] ?? null;
     $tmp = array($num1, $num2);
     $color = sprintf('#%06X', mt_rand(0, 0xFFFFFF));
 
@@ -40,7 +42,8 @@ body {
     }
     $res = $num1 + $num2;
 
-    print(rand(0,10) % 4 ? "<span style=\"font-size:200%; color:$color;\">$res</span>" : $res);
+    print("<span style=\"font-size:200%; color:$color;\">$res</span>");
+
 ?>
 
 </body>
